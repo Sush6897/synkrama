@@ -21,5 +21,4 @@ This is a CodeIgniter 3 based application for managing dealers and employees.
 3. Configure `application/config/database.php` if your credentials differ (default is `root` with no password).
 4. Access the project at `http://localhost/codigniter%203/index.php/`.
 
-## Credentials
-- **Employee**: `sushil@yopmail.com` / `password123`
+
