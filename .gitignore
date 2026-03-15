@@ -1,0 +1,21 @@
+# Professional .gitignore for CodeIgniter 3
+
+/user_guide/
+/system/
+/application/logs/*
+/application/cache/*
+/vendor/
+/node_modules/
+/*.log
+/*.tmp
+
+# Environment specific
+application/config/database.php
+application/config/config.php
+
+# Antigravity/System generated
+.antigravity/
+.gemini/
+/brain/
+check_schema.php
+debug_db.php

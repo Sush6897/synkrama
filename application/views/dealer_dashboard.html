@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dealer Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Dealer Dashboard</a>
+        <div class="d-flex">
+            <a href="<?php echo site_url('auth/logout'); ?>" class="btn btn-outline-light">Logout</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h3>Your Profile</h3>
+            <hr>
+            <?php if($details): ?>
+            <p><strong>City:</strong> <?php echo $details->city; ?></p>
+            <p><strong>State:</strong> <?php echo $details->state; ?></p>
+            <p><strong>Zip Code:</strong> <?php echo $details->zip_code; ?></p>
+            <a href="<?php echo site_url('dealer/edit'); ?>" class="btn btn-primary">Edit Profile</a>
+            <?php else: ?>
+            <p>No details found.</p>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

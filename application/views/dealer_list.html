@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table class="table">
+
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Zip</th>
+        </tr>
+
+        <?php foreach($dealers as $d){ ?>
+
+        <tr>
+            <td>
+                <?php echo $d->first_name ?>
+            </td>
+            <td>
+                <?php echo $d->city ?>
+            </td>
+            <td>
+                <?php echo $d->zip ?>
+            </td>
+        </tr>
+
+        <?php } ?>
+
+    </table>
+
+    <?php echo $this->pagination->create_links(); ?>
+</body>
+
+</html>m
