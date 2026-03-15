@@ -23,8 +23,3 @@ CREATE TABLE IF NOT EXISTS `dealer_details` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- Basic seed data
-INSERT INTO `users` (`first_name`, `last_name`, `email`, `password`, `user_type`, `is_first_login`) VALUES
-('Sushil', 'Employee', 'sushil@yopmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'employee', 0);
--- Password is 'password123' hashed with md5
