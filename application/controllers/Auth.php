@@ -38,6 +38,7 @@ class Auth extends CI_Controller {
         $this->form_validation->set_rules('last_name', 'Last Name', 'required');
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
         $this->form_validation->set_rules('password', 'Password', 'required|min_length[6]');
+        $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'required|matches[password]');
         
         $user_type = $this->input->post('user_type');
         if (!in_array($user_type, ['Employee', 'Dealer'])) {

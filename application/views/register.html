@@ -36,6 +36,11 @@
                         <input class="form-control" type="password" name="password" id="password" minlength="6" required>
                     </div>
                     <div class="mb-3">
+                        <label class="form-label">Confirm Password</label>
+                        <input class="form-control" type="password" name="confirm_password" id="confirm_password" required>
+                        <small id="passwordError" class="text-danger"></small>
+                    </div>
+                    <div class="mb-3">
                         <label class="form-label">User Type</label>
                         <select class="form-select" name="user_type" id="user_type">
                             <option value="Employee">Employee</option>
@@ -84,6 +89,7 @@
         var lastName = $("#last_name").val().trim();
         var email = $("#email").val().trim();
         var password = $("#password").val();
+        var confirmPassword = $("#confirm_password").val();
         
         // Comprehensive JS Validation
         var nameRegex = /^[A-Za-z\s]+$/;
@@ -119,6 +125,10 @@
         }
         if (password.length < 6) {
             $('#alertBox').html('<div class="alert alert-danger">Password must be at least 6 characters long.</div>');
+            return false;
+        }
+        if (password !== confirmPassword) {
+            $('#alertBox').html('<div class="alert alert-danger">Passwords do not match.</div>');
             return false;
         }
 

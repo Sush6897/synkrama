@@ -1,7 +1,6 @@
 # Professional .gitignore for CodeIgniter 3
 
-/user_guide/
-/system/
+
 /application/logs/*
 /application/cache/*
 /vendor/
@@ -9,9 +8,6 @@
 /*.log
 /*.tmp
 
-# Environment specific
-application/config/database.php
-application/config/config.php
 
 # Antigravity/System generated
 .antigravity/
