@@ -19,6 +19,6 @@ This is a CodeIgniter 3 based application for managing dealers and employees.
 1. Clone the repository to your `htdocs` folder.
 2. Import the `database.sql` file into your MySQL database named `ci_assignment`.
 3. Configure `application/config/database.php` if your credentials differ (default is `root` with no password).
-4. Access the project at `http://localhost/codigniter%203/index.php/`.
+4. Access the project at `http://localhost/synkrama/index.php/`.
 
 
